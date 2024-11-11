@@ -45,7 +45,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Binnenkijken scherm van het Nijntje Museum 
-  <img src="readme-images/binnenkijkenScherm.PNG" width="375px" alt="Binnenkijken scherm van Nijntje Museum">
+  <img src="readme-images/binnekijkenScherm.PNG" width="375px" alt="Binnenkijken scherm van Nijntje Museum">
  
 </details>
 
