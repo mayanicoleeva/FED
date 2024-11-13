@@ -18,15 +18,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Auteur:
   Maya Noordanus 
   #### Je startniveau:
-  Blauw (heel klein beetje rood)
+  Blauw 
 
   #### Je focus:
-  De focus waarvoor ik heb gekozen om mij meer mee bezig te houden is **surface plane**. (kies uit responsive óf surface plane)
+  De focus waarvoor ik heb gekozen om mij meer mee bezig te houden is **surface plane**. 
  
 </details>
-
-
-
 
 
 ## Je website
@@ -35,17 +32,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  Voor deze opdracht wil ik gaan probeeren om de website van het Nijntje Museum na te gaan maken. Hier volgt de link naar de site: https://nijntjemuseum.nl/nl/ 
+  Voor deze opdracht wil ik gaan probeeren om de website van het merk Dopper na te gaan maken. Hier volgt de link naar de site: https://www.dopper.com/nl 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Homescherm/ beginscherm van het Nijntje Museum.
-  <img src="readme-images/homeScherm.PNG" width="375px" alt="Homescherm van Nijntje Museum">
-  <img src="readme-images/homeScherm2.PNG" width="375px" alt="Homescherm van Nijntje Museum deel 2">
-
+  Mission -> Story pagina van Dopper.
+  <img src="readme-images/Dopper_MissionStory.JPG" width="375px" alt="Screenshot van Dopper Mission Story.">
+  q
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Binnenkijken scherm van het Nijntje Museum 
-  <img src="readme-images/binnekijkenScherm.PNG" width="375px" alt="Binnenkijken scherm van Nijntje Museum">
+  Product pagina van een dopper fles. 
+  <img src="readme-images/Dopper_productpagina.JPG" width="375px" alt="Screenshot van een dopper product pagina.">
  
 </details>
 
