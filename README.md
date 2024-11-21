@@ -36,12 +36,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Mission -> Story pagina van Dopper.
-  <img src="readme-images/Dopper_MissonStory.JPG" width="375px" alt="Screenshot van Dopper Mission Story.">
+  <img src="readme-images/onsVerhaalDopper.png" width="375px" alt="Screenshot van Dopper Mission Story.">
   q
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Product pagina van een dopper fles. 
-  <img src="readme-images/Dopper_productpagina.JPG" width="375px" alt="Screenshot van een dopper product pagina.">
+  <img src="readme-images/productPaginaDopper.png" width="375px" alt="Screenshot van een dopper product pagina.">
  
 </details>
 
