@@ -54,6 +54,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - De interactieve elementen zijn op de pagina hetzelfde vormgegeven waardoor die gemakkelijk te herkennen zijn.
+  - De elementen van de pagina's bewegen goed mee wanneer het scherm van groote veranderd. De layout veranderd maar blijft goed.
+  - Niet overal is er even goed gebruik gemaakt van witruimte. Bij de product pagina kan daar zeker nog verbetering in komen.
+  - De titels van nieuwe stukken tekst zijn bijna allemaal in een span gezet. Er word namelijk een animatie gebruikt om het in de laten zweven. Dat zou veranderd kunnen worden naar h2.
+  - Zo goed als elke afbeelding heeft een alt tekst.
+
+
 
 
 </details>
@@ -66,7 +73,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/breakdownSchets.Dopper.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/BreakdownSchets.Dopper.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/menuBreakdown.jpg" width="375px" alt="breakdown van een dynamisch deel">
