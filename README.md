@@ -76,7 +76,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/BreakdownSchets.Dopper.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/menuBreakdown.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/menuBreakdown.jpgmenuBreakdown.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
@@ -94,6 +94,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Wat goed ging was dat het me gemakkelijk lukte om de goede fonts in mijn code te verwerken. Wel was het daarna lastig om te kijken welke ik waar nodig had aangezien de website zelf ze verkeerde namen had gegeven (zoals bold was medium, medium was regular etc.) Ook ben ik opgeschoten met het maken van de carrousel en die te laten werken. daar ga ik nog wel verder mee werken in de css om het ook op de echte site te laten lijken. 
+  Ik heb wel moeite met ervoor zorgen dat er op de afbeeldingen in de carrousel ook tekst komt en daar ook blijft.
+  Ook lukt het me niet zo goed om de video in het begin van de mission pagina op de achtergrond te krijgen. het lukt me alleen om die dan gelijk over de hele pagina als achtergrond te krijgen maar dat wil ik niet. Dat moet ik nog even uitzoeken en voor de rest gaat het opzich wel oke, moet nog veel doen. 
+    <img src="readme-images/videoDopperScherm.png" width="375px" alt="deel van scherm/code waar ik moeite mee heb">
+
 
 
   ### Agenda voor meeting
@@ -104,15 +109,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
-
+  student 1 = Bas, gaat het hebben over wanneer het een h2 of p is, wanneer het button of a is.
+  student 2 = Maya, gaat het hebben over de tekst laten inzweven met animatie, hoe de "golf" aan het einde van de main moet werken, werken met sections wanneer dat echt nodig is.
+  student 3 = Jazzmine, gaat het hebben over hoe je fonts kan vinden
+  
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - punt 1, kijken welke stukken tekst ik in sections bij elkaar kan doen. Hierdoor word het overzichtelijker en makkelijker om mee te werken.
+  - punt 2, Goede uitleg gekregen over hoe ik de carousel met de juiste code kan maken. 
+  - punt 3, het is handig om de breakdownschetsen duidelijk voor jezelf te hebben. Hierdoor kan het namelijk makkelijker worden om de pagina de coderen en hou je zo voor jezelf een overzicht.
 
 </details>
 

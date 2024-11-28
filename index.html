@@ -15,15 +15,37 @@
 <body>
 	<header>
 		<nav>hamburger menu</nav>
-		logo van dopper
+		<a href="#">
+			<img src="images/dopperLogo.svg" alt="go home"/>
+			  <!-- de open button -->
+  <!-- de button is niet relevant voor screenreaders -->
+  <!-- met aria-hidden="true" 'verstop' je de button voor ze -->
+  <button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="" />Menu</button>
+  <!--  het menu -->
+  <nav>
+    <!-- de sluit button -->
+    <!-- de button is ook niet relevant voor screenreaders -->
+    <button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" />Sluit</button>
+    
+    <ul>
+      <li><a href="productScherm.html"> Fles</a></li>
+      <li><a href="#"> Kraan</a></li>
+      <li><a class="active"> Missie</a></li>
+      <li><a href="#"> Maak impact</a></li>
+    </ul>
+  </nav>
+		</a>
 	</header>
+
 	<main>
-		<section>
-			<h1>Verpakt water is een serieus probleem</h1>
-			<h2>Wij zijn hier om het op te lossen</h2>
+		<section class="content">
+			<h1 class="hidden">Verpakt water is een serieus probleem</h1>
+			<p>Wij zijn hier om het op te lossen</p>
 		</section>
+			<img class="backgroundVideo" src="images/videoDopper.gif" alt="video van bubbels met plastic flessen in de achtergrond">
 		
-			<h1>Water hoort niet verpest te worden</h1>
+		<section>
+			<h3 class="hidden">Water hoort niet verpest te worden</h3>
 				<p>Water is de levensader van onze planeet. 
 					Wij geloven dat het niet verpakt, geplastificeerd en gelabeld hoort te worden.
 					Niet zinloos vervoerd. Van hot naar her, van hier naar daar.
@@ -34,15 +56,20 @@
 					Water wordt zozeer verpest dat we er niet meer mee kunnen doen waarvoor het bedoeld is: Drinken, uit de kraan.
 				</p>
 				<img src="images/dopper_GIF.gif" alt="Een korte video van de hoeveelheid plastic afval wat in de zee beland">
-				<img src="images/dopperMan.webp" alt="Man die tot zijn knieën in de zee staat">
-			<h1>We zijn hier om een einde te maken aan verpakt water</h1>	
+		</section>
+
+		<section>
+			<img src="images/dopperMan.webp" alt="Man die tot zijn knieën in de zee staat">
+			<h3 class="hidden">We zijn hier om een einde te maken aan verpakt water</h3>	
 				<p>Onze oprichter, Merijn Everaarts, had er genoeg van al die wegwerpwaterflesjes in de zee te zien drijven.
 					Hij wilde iedereen een alternatief bieden voor wegwerpplastic. En zo werd in 2010 de eerste Dopper-fles geboren.
 					Sindsdien ontwikkelen we voortdurend nieuwe oplossingen om een einde te maken aan verpakt water 
 					en mensen kraanwater te laten drinken.
 				</p>
+		</section>
 
-			<h1>We kunnen het niet alleen</h1>
+		<section>
+			<h3 class="hidden">We kunnen het niet alleen</h3>
 				<p>Zo'n groot doel bereik je niet door één persoon te veranderen, maar door het hele systeem te veranderen.
 					Daarom moedigen we iedereen aan om hun hervulbare fles mee te nemen en bij te vullen, 
 					vragen we bedrijven om kraanwater aan te bieden en te promoten, en lobbyen we bij overheden om kraanwater veilig en toegankelijk te maken voor iedereen.
@@ -50,17 +77,38 @@
 				<a>Word onderdeel van onze community</a>
 				<a>Lees onze veranderstrategie</a>
 				<img src="images/dopperVrouwSup.webp" alt="Vrouw die aan het suppen is">
-			<h1>Ontdek onze oplossingen</h1>
+		</section>
+
+			<h2 class="hidden">Ontdek onze oplossingen</h2>
+		<section id="justBolletjes" class="caroCarrousel" tabIndex="-1">
+				<ul>
+					<li id="element1"><img src="images/dopperGeel.webp" alt="Gele dopperfles met gele achtergrond"/></li>
+					<li id="element2"><img src="images/dopperBlauw.webp" alt="Dopperfles met kraan erin"/></li>
+					<li id="element3"><img src="images/dopperFlesVullen.webp" alt="Hand die een dopperfles vult bij een waterpunt"/></li>
+					<li id="element4"><img src="images/dopperSuppenMannen.webp" alt="Drie mannen op een sup in het water die afval aan het verzamelen zijn"/></li>
+				</ul>
+				<nav>
+					<ul>
+						<li><a href="#element1" aria-label="go to element1"></a></li>
+						<li><a href="#element2" aria-label="go to element2"></a></li>
+						<li><a href="#element3" aria-label="go to element3"></a></li>
+						<li><a href="#element4" aria-label="go to element4"></a></li>
+					</ul>
+				</nav>
+		</section>
+		<!-- code hierboven van deze link https://codepen.io/shooft/pen/ZEpXmrg?editors=0100 -->
 
 				<img src="images/dopperWater.webp" class="imgWater" alt="foto van water">
 
-			<h1>Verpakt water duurzaam de wereld uit</h1>
+		<section>
+			<h3 class="hidden">Verpakt water duurzaam de wereld uit</h3>
 				<p>Wij zijn hier om een probleem op te lossen, niet om er nog meer te veroorzaken. 
 					Daarom minimaliseren we de impact van onze oplossingen voor een netto positief effect op de planeet. 
 					Dit doen we op verschillende manieren, van hoe we ons bedrijf runnen tot hoe we onze producten maken.
 				</p>
 				<a>Ontdek meer</a>
 				<a>Lees ons Impact Report</a>
+		</section>
 	</main>
 	<footer>
 
