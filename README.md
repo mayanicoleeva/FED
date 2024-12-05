@@ -178,7 +178,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Wat deze week goed ging met het coderen was dat het hammbugermenu mij eindelijk was gelukt, met een beetje hulp natuurlijk. Wel loop ik daarbij nog vast met het animeren van de button van drie streepjes naar een kruis te laten gaan wanneer je er op klikt. 
+  Ook ben ik nu bezig met de footer en het stijlen. 
+  Ik loop ook vast bij mijn carrousel. snap namelijk niet hoe ik de tekst op de plaatjes krijg en die daar ook blijven wanneer je swiped. 
+  verder moet ik nog de buttons vormgeven en de carrousel bij de productpagina maken, maar ik goed op weg
 
 
   ### Agenda voor meeting
