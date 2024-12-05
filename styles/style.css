@@ -4,7 +4,7 @@
 *, *::after, *::before {
   box-sizing:border-box;
   margin: 0;
-  padding:.4em;
+  padding: 0;
 }
 
 /*********************/
@@ -47,10 +47,43 @@ body {
 	background-color: #FCFAF2;
 	grid-template-columns: minmax(auto, var(--maxWidth));
 	justify-content:center;
+	overflow-x: hidden;
 }
 /* deel van code van https://codepen.io/shooft/pen/ZEpXmrg?editors=0100 voor carrousel index
 en voor verschillende afbeeldingen van productscherm */
 
+footer {
+	background-color: #f6ecc8;
+}
+
+header {
+	display: flex;
+	position: sticky;
+	align-items: center;
+    justify-content: flex-end;
+	padding: 2em 1.25em;
+}
+
+header button {
+	width: 4em;
+	background: none;
+	border: none;
+}
+
+header a:not(.toonMenu a) {
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+	width: 40%;
+}
+
+header a img {
+	width: 100%;
+}
+
+.content h1, .content p {
+	z-index: -1;
+}
 
 h1, h2 {
 	font-family: 'Dopper Regular';
@@ -60,20 +93,53 @@ h1, h2 {
 h3 {
 	font-family: 'Gilroy Bold';
 	font-size: 36px;
+	padding-top: 2em;
 }
 
 p {
 	font-family: 'Gilroy Medium';
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 18px;
 
+}
+
+header nav {
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	transform: translate(0%, -100%);
+	transition: .3s;
+	color: #f6ecc8;
+	background-color: #0067E5;
+	font-family: 'Gilroy Bold';
+	font-size: 34px;
+}
+
+header nav li {
+	list-style-type: none;
+}
+
+.toonMenu {
+	transform: translate(0%, 0%);
+}
+
+section {
+	align-items: center;
+	padding: 1.5em;
 }
 
 img {
 	border-radius: 20px;
 	display: block;
-	max-width: 80vw;
-	padding: .1em;
+	max-width: 100%;
 }
 
+p.content {
+	font-size: 27px;
+}
 /* a {
 	font-family: 'Gilroy Medium';
 	background-color:#0067e5;
@@ -84,7 +150,16 @@ img {
 	align-items: center;
 } */
 
-li {
+header > button {
+	order: 3;
+}
+
+.imgWater {
+	border-radius: 0;
+	max-width: 100vw;
+}
+
+.druppeltjes li {
 	list-style-image: url('../images/drop.svg');
 	font-family: 'Gilroy Medium';
 }
@@ -93,64 +168,71 @@ li::marker {
 	font-size: 1.8em;
 	line-height: 0.1;
 }
-	/* ul {
-		font-family: 'Gilroy Medium';
-		list-style-image: url('../images/drop.svg');
-	}
-	/* ik heb deze bron gebruikt om de li tag van een rondje naar een druppel te maken
-	https://www.w3schools.com/cssref/pr_list-style-image.php */ */
-
-main.product section:nth-child(2) {
-	background-color: #f9f3df;
-	padding: 2em 1.25em 4.375em;
-}
-
-main.product section:nth-child(3) {
-	background-color: #0067e5;
-	
-}
-
-main.product section:nth-child(4) {
-	background-color: #baccea;
-	padding: 2em 1.25em 4.375em;
-}
-
-.backgroundVideo {
-	position: absolute;
-	
-
-}
-
-.content {
-	position: relative;
-	
-}
-
-.imgWater {
-	border-radius: 0;
-	max-width: 100vw;
-}
 
 .hidden {
 	opacity: 0;
 	transform: translateY(10vh);
 	transition: opacity 0.6s ease, transform 0.6s ease;
-  }
+}
   
-  .visible {
+.visible {
 	opacity: 1;
 	transform: translateY(0);
-  }
+}
+
+.backgroundVideo{
+	position: absolute;
+	width: 100%;
+	max-width: 100%;
+	padding: 0;
+	left: 0;
+	top: 0;
+	z-index: -2;
+	border-radius: 0;
+}
+
+p.hidden {
+	font-size: 27px;
+}
+
+.content {
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	color: #f6ecc8;
+}
+	/* ul {
+		font-family: 'Gilroy Medium';
+		list-style-image: url('../images/drop.svg');
+	}
+	/* ik heb deze bron gebruikt om de li tag van een rondje naar een druppel te maken
+	https://www.w3schools.com/cssref/pr_list-style-image.php */
+
+main.product section:nth-of-type(2) {
+	background-color: #f9f3df;
+	padding: 2em 1.25em 4.375em;
+}
+
+main.product section:nth-of-type(3) {
+	background-color: #0067e5;
+	
+}
+
+main.product section:nth-of-type(4) {
+	background-color: #baccea;
+	padding: 2em 1.25em 4.375em;
+}
+
   /* https://codepen.io/TheSupermazter/pen/ogvNvwJ?editors=0100  */
 
   .caroCarrousel {
 	/* basis waarden die door de hele carrousel gebruikt worden */
 	/* kun je zelf aanpassen */
-	--caroCarrouselMainColor:#cce2ff;
-  --caroCarrouselAccentColor:#0067e5;
-	--caroCarrouselShadeColor:#cce2ff;
-
-  position: relative;
+	--caroCarrouselMainColor:#0067e5;
+  	--caroCarrouselAccentColor:#cce2ff;
+  	position: relative;
 	outline:none;
 }
 
@@ -158,7 +240,7 @@ main.product section:nth-child(4) {
 @media (prefers-color-scheme: dark) {
   .caroCarrousel {
     --caroCarrouselMainColor:#ccc;
-    --caroCarrouselShadeColor:#4449;
+    --caroCarrouselAccentColor:#4449;
   }
 }
 
@@ -176,7 +258,7 @@ main.product section:nth-child(4) {
 	/* snappen als er gescrolled wordt - andere helft bij li */
   scroll-snap-type: inline mandatory;
   
-  /* smooth scrollen */
+  /* smooth als met js gescrolled wordt */
 	scroll-behavior: smooth;
   
   /* scrollbar zoveel mogelijk verbergen */
@@ -241,22 +323,22 @@ main.product section:nth-child(4) {
   display: block;
   width:100%;
   height:100%;
-  
   text-decoration: none;
 	color: var(--caroCarrouselMainColor);
-  background-color: var(--caroCarrouselShadeColor);
+  background-color: var(--caroCarrouselAccentColor);
 	border-radius: 50%;
-  outline: none;
-	box-shadow: inset 0 0 0 1px currentColor;
-  
+  outline: none;  
   transition: 0.5s;
 }
 
 .caroCarrousel > nav a:hover,
 .caroCarrousel > nav a:focus {
-  color: var(--caroCarrouselAccentColor);
+  color: var(--caroCarrouselMainColor);
 }
 
 .caroCarrousel > nav a.current {
   background-color: currentColor;
 }
+
+/* https://codepen.io/shooft/pen/QWKqzQj?editors=0100 */
+
