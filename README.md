@@ -178,7 +178,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Wat deze week goed ging met het coderen was dat het hammbugermenu mij eindelijk was gelukt, met een beetje hulp natuurlijk. Wel loop ik daarbij nog vast met het animeren van de button van drie streepjes naar een kruis te laten gaan wanneer je er op klikt. 
+  Wat deze week goed ging met het coderen was dat het hambugermenu mij eindelijk was gelukt, met een beetje hulp natuurlijk. Wel loop ik daarbij nog vast met het animeren van de button van drie streepjes naar een kruis te laten gaan wanneer je er op klikt. 
   Ook ben ik nu bezig met de footer en het stijlen. 
   Ik loop ook vast bij mijn carrousel. snap namelijk niet hoe ik de tekst op de plaatjes krijg en die daar ook blijven wanneer je swiped. 
   verder moet ik nog de buttons vormgeven en de carrousel bij de productpagina maken, maar ik goed op weg
@@ -193,12 +193,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+Jegor, heeft het gehad over de carrousel en hoe de delen van de andere afbeeldingen kan zien.
+Bas, heeft het gehad over de zoekbalk, hoe die op de site staat.
+Jazzmine, heeft het gehad over punten van haar carrousel, kleuren van icons.
+Ik heb het gehad over het hamburgermenu, mijn carrousel en het golfje van mijn footer.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  - punt 1, ik had gevraagd over het hamburger menu en ben er achter gekomen dat het maar een button hoeft te zijn en niet twee, dat je die kan laten transformen naar het kruisje en het zo werkt. 
+  - punt 2, om de tekst per afbeelding in de carrousel te zetten is best wel makkelijk. Ik moet het per afbeelding in de li zetten en dan de plek aanpassen met position.
   - nog een punt
   - ...
 
@@ -242,8 +246,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. [bron 1](https://codepen.io/shooft/pen/ZEpXmrg?editors=0100)
+  2. [bron 2](https://www.w3schools.com/cssref/pr_list-style-image.php)
+  3. [bron 3](https://codepen.io/shooft/pen/JjQLVeB)
+  4. [bron 4](https://codepen.io/TheSupermazter/pen/ogvNvwJ?editors=0100)
+  5. [bron 5](https://codepen.io/shooft/pen/QWKqzQj?editors=0100)
+  6. [bron 6](https://codepen.io/TheSupermazter/pen/ogvNvwJ?editors=0010) 
+
+  
+  
 
 </details>

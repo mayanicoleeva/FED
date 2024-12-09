@@ -14,6 +14,7 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+	--color-button-text:#111;
 	--maxWidth:32rem;
 }
 
@@ -81,10 +82,6 @@ header a img {
 	width: 100%;
 }
 
-.content h1, .content p {
-	z-index: -1;
-}
-
 h1, h2 {
 	font-family: 'Dopper Regular';
 	font-size: 36px;
@@ -93,15 +90,44 @@ h1, h2 {
 h3 {
 	font-family: 'Gilroy Bold';
 	font-size: 36px;
-	padding-top: 2em;
+	padding-top: 1em;
 }
 
 p {
 	font-family: 'Gilroy Medium';
 	margin-top: 1em;
 	margin-bottom: 1em;
-	font-size: 18px;
+	font-size: 20px;
 
+}
+
+li {
+	font-family: 'Gilroy Medium';
+	font-size: 20px;
+}
+
+section a {
+	background-color: #0067E5;
+	text-decoration: none;
+	font-family: 'Gilroy Medium';
+	font-size: 18px;
+	color: #FCFAF2;
+	padding: .5em;
+	border-radius: .5em;
+	display: flex;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
+img {
+	border-radius: 20px;
+	display: block;
+	max-width: 100%;
+}
+
+section {
+	align-items: center;
+	padding: 1.5em;
 }
 
 header nav {
@@ -122,33 +148,57 @@ header nav li {
 	list-style-type: none;
 }
 
-.toonMenu {
-	transform: translate(0%, 0%);
+header button {
+	display:grid;
+	place-items:center;
+	border-radius:50%;
+}
+  
+/* alledrie de streepjes */
+header button span {
+	grid-row-start:1;
+	grid-column-start:1;
+	width:1.2em;
+	height:.2em;
+	background-color: var(--color-button-text);
+	transition-duration:.5s;
+}
+  
+/* het eerste streepje */
+header button span:nth-of-type(1) {
+	/* developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateY */
+	transform:translateY(-.4em);
+}
+  
+/* het tweede streepje
+header button span:nth-of-type(2) {
+	/* staat al op de goede plek */
+  
+/* het derde streepje */
+header button li:nth-of-type(1) button span:nth-of-type(3) {
+	transform:translateY(.4em);
 }
 
-section {
-	align-items: center;
-	padding: 1.5em;
+  /* het eerste streepje */
+header button li:nth-of-type(1) button[aria-expanded="true"] span:nth-of-type(1) {
+	/* developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scaleX*/
+	transform:rotate(45deg) scalex(1.25);
 }
-
-img {
-	border-radius: 20px;
-	display: block;
-	max-width: 100%;
+  
+  /* het tweede streepje */
+header button li:nth-of-type(1) button[aria-expanded="true"] span:nth-of-type(2) {
+	opacity:0;
 }
+  
+  /* het derde streepje */
+header button li:nth-of-type(1) button[aria-expanded="true"] span:nth-of-type(3) {
+	transform:rotate(-45deg) scalex(1.25);
+}
+/* https://codepen.io/shooft/pen/JjQLVeB */
 
 p.content {
 	font-size: 27px;
 }
-/* a {
-	font-family: 'Gilroy Medium';
-	background-color:#0067e5;
-	color: #f6ecc8;
-	text-decoration: none;
-	border-radius: 1em;
-	padding: .75em;
-	align-items: center;
-} */
 
 header > button {
 	order: 3;
@@ -159,13 +209,21 @@ header > button {
 	max-width: 100vw;
 }
 
+.content h1, .content p {
+	z-index: -1;
+}
+
+.toonMenu {
+	transform: translate(0%, 0%);
+}
+
 .druppeltjes li {
 	list-style-image: url('../images/drop.svg');
 	font-family: 'Gilroy Medium';
 }
 
 li::marker {
-	font-size: 1.8em;
+	font-size: 1.2em;
 	line-height: 0.1;
 }
 
@@ -203,12 +261,32 @@ p.hidden {
 	text-align: center;
 	color: #f6ecc8;
 }
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#footerheel {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#bannerProduct {
+	background-color: #0067E5;
+}
 	/* ul {
 		font-family: 'Gilroy Medium';
 		list-style-image: url('../images/drop.svg');
 	}
 	/* ik heb deze bron gebruikt om de li tag van een rondje naar een druppel te maken
 	https://www.w3schools.com/cssref/pr_list-style-image.php */
+main.product section:nth-of-type(1) {
+	background-color: #baccea;
+	padding: 2em 1.25em 4.375em;
+}
 
 main.product section:nth-of-type(2) {
 	background-color: #f9f3df;
@@ -216,14 +294,14 @@ main.product section:nth-of-type(2) {
 }
 
 main.product section:nth-of-type(3) {
-	background-color: #0067e5;
+	background-color: #cce2ff;
 	
 }
 
-main.product section:nth-of-type(4) {
-	background-color: #baccea;
+/* main.product section:nth-of-type(4) {
+	background-color: #0067e5;
 	padding: 2em 1.25em 4.375em;
-}
+} */
 
   /* https://codepen.io/TheSupermazter/pen/ogvNvwJ?editors=0100  */
 

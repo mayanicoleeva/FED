@@ -17,12 +17,13 @@
 		<a href="#">
 			<img src="images/dopper-logo.svg" alt="go home">
 		</a>
-		<button aria-hidden="true"><img src="images/dopper-open.svg" alt="hambugermenu openmaken"></button>
+		<button aria-hidden="true"><img src="images/dopper-open.svg" alt="hambugermenu openmaken">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
 		<nav>
 			<ul>
-				<li>
-					<button aria-hidden="true"><img src="images/dopper-close.svg" alt="hamburgermenu sluiten"></button>
-				</li>
 				<li>
 					<details>
 						<summary>Fles</summary>
@@ -90,13 +91,29 @@
 				<img src="images/dopperVrouwSup.webp" alt="Vrouw die aan het suppen is">
 		</section>
 
-			<h2 class="hidden">Ontdek onze oplossingen</h2>
 		<section id="bolletjesAndSwipen" class="caroCarrousel" tabIndex="-1">
+			<h2 class="hidden">Ontdek onze oplossingen</h2>
 				<ul>
-					<li id="element1"><img src="images/dopperGeel.webp" alt="Gele dopperfles met gele achtergrond"></li>
-					<li id="element2"><img src="images/dopperBlauw.webp" alt="Dopperfles met kraan erin"></li>
-					<li id="element3"><img src="images/dopperFlesVullen.webp" alt="Hand die een dopperfles vult bij een waterpunt"></li>
-					<li id="element4"><img src="images/dopperSuppenMannen.webp" alt="Drie mannen op een sup in het water die afval aan het verzamelen zijn"></li>
+					<li id="element1"><img src="images/dopperGeel.webp" alt="Gele dopperfles met gele achtergrond">
+						<p>Fles</p>
+						<p>Een collectie aan hervulbare flessen voor iedereen</p>
+						<a href="#">Lees verder</a>
+					</li>
+					<li id="element2"><img src="images/dopperBlauw.webp" alt="Dopperfles met kraan erin">
+						<p>Kraan</p>
+						<p>Een kraan die hervullen de norm maakt</p>
+						<a href="#">Lees verder</a>
+					</li>
+					<li id="element3"><img src="images/dopperFlesVullen.webp" alt="Hand die een dopperfles vult bij een waterpunt">
+						<p>Kaart</p>
+						<p>We zetten drinkwater op de kaart</p>
+						<a href="#">Lees verder</a>
+					</li>
+					<li id="element4"><img src="images/dopperSuppenMannen.webp" alt="Drie mannen op een sup in het water die afval aan het verzamelen zijn">
+						<p>Community</p>
+						<p>Sluit je aan bij onze strijd tegen verpakt water</p>
+						<a href="#">Lees verder</a>
+					</li>
 				</ul>
 				<nav>
 					<ul>
@@ -122,10 +139,49 @@
 		</section>
 	</main>
 	<footer>
-		<h3>Schrijf je in voor onze maandelijkse nieuwsbrief en blijf op de hoogte.</h3>
-		<label>
-			<input type="email" placeholder>
-		</label>
+		<section>
+			<h3>Schrijf je in voor onze maandelijkse nieuwsbrief en blijf op de hoogte.</h3>
+			<label>
+				<input type="text" id="name" name="name" placeholder="Je naam">
+			</label>
+			<label>
+				<input type="email" id="email" name="email" placeholder="Je emailadres">
+			</label>
+			<button type="submit"></button>
+		</section>
+		<div id="footerheel">
+			<div class="footer">
+			<h2>Just refill</h2>
+			<p>Klantenservice</p>
+			<a href="#">Helpcenter</a> 
+			<a href="#">Care Manual</a>
+			<a href="#">Bezorging & Verzending</a> 
+			<a href="#">Herroeping, Retouren & Garantie</a> 
+			<a href="#">Vind een winkel</a> 
+		</div>
+		<div class="footer">
+			<p>Shop</p>
+			<a href="#">Alle flessen</a> 
+			<a href="#">Personaliseer een fles</a>
+			<a href="#">Accessoires</a> 
+			<a href="#">Losse onderdelen</a>
+		</div>
+		<div class="footer">
+			<p>Over dopper</p>
+			<a href="#">Missie</a> 
+			<a href="#">Jaarverslagen</a>
+			<a href="#">Blog</a> 
+			<a href="#">Contact</a>
+			<a href="#">Team</a>
+			<a href="#">Vacatures</a>
+		</div>
+		<div class="footer">
+			<p>Voor organisaties</p>
+			<a href="#">Bestel gepersonaliseerde flessen</a> 
+			<a href="#">Bestel de Dopper Water Tap</a>
+			<a href="#">Verkoop Dopperflessen</a> 
+			</div>
+		</div>
 	</footer>
 </body>
 	
