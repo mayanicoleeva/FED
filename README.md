@@ -210,31 +210,32 @@ Ik heb het gehad over het hamburgermenu, mijn carrousel en het golfje van mijn f
 
 
 
-
-
 ## Eindgesprek (week 5)
 
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/eindresultaat1.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/eindresultaat2.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/eindresultaat3.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
+  Wat goed ging tijdens dit vak was dat veel nieuwe dingen heb geleerd en heb doorgezet. Zo vind ik dat ik tot nu toe best wel twee redelijke paginas heb gemaakt (die nog zeker niet af zijn). 
+  Ook ben ik er trots op dat ik er het beste van het proberen te maken en mijn best heb gedaan. Waar ik het meeste trots op ben is toch denk ik wel de carrousel op de "missie" pagina. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
+  <img src="readme-images/schermafbeelding-carrousel.png" width="375px" alt="schermafbeelding carrousel">
+<img src="readme-images/schermafbeelding-druppels.png" width="375px" alt="lijst met druppels als punten">
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+  Ik vond best wel veel dingen tijdens dit vak lastig. Zo is het me nogsteeds neit gelukt om mijn hamburger menu goed te laten werken. Ik heb er uren aan besteed maar het lukt me neit helemaal. ook vind ik het namaken van de footer erg lastig. Ik krijg de tekst steeds niet op de goede plekken en de "golf" animatie bovenaan de footer is ook nog een dingetje. In ieder geval nog genoeg punten om aan te werken.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/schermafbeelding-footer.png" width="375px" alt="schermafbeelding footer">
+  <img src="readme-images/schermafbeelding-hamburgermenu.png" width="375px" alt="schermafbeelding menu">
 </details>
-
-
-
 
 
 ## Bronnenlijst
