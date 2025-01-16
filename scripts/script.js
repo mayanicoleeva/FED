@@ -201,18 +201,39 @@ function createCaroCarrousel(carrouselID) {
 })();
 // https://codepen.io/shooft/pen/QWKqzQj?editors=0010
 
-var openButton = document.querySelector("header > button");
-	openButton.onclick = openMenu;
+// var openButton = document.querySelector("header button");
+// 	openButton.onclick = openMenu;
 
-function openMenu() {
-	var Nav = document.querySelector("header nav");
-	Nav.classList.add("toonMenu");
- }
+// function openMenu() {
+// 	
+// 	Nav.classList.toggle("toonMenu");
+//  }
 
-var sluitButton = document.querySelector("header nav button");
-sluitButton.onclick = sluitMenu;
+var Nav = document.querySelector("header nav");
+var Bodyy = document.querySelector("body");
 
-function sluitMenu() {
-	var Nav = document.querySelector("header nav");
-	Nav.classList.remove("toonMenu");
+
+/***************************/
+/* EERSTE STREEPJES BUTTON */
+/***************************/
+var eersteStreepjesButton = document.querySelector("header button");
+eersteStreepjesButton.onclick = eersteStreepjesButtonKlik;
+
+function eersteStreepjesButtonKlik() {
+  if (eersteStreepjesButton.ariaExpanded == "false") {
+    eersteStreepjesButton.ariaExpanded = "true"
+	console.log("aria op true gezet")
+	Nav.classList.toggle("toonMenu");
+	Bodyy.classList.toggle("toonMenuBody");
+  }
+  else {
+    eersteStreepjesButton.ariaExpanded = "false"
+	console.log("aria op false gezet")
+	Nav.classList.toggle("toonMenu");
+	Bodyy.classList.toggle("toonMenuBody");
+  }
 }
+
+
+
+
