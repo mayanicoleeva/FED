@@ -59,10 +59,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Niet overal is er even goed gebruik gemaakt van witruimte. Bij de product pagina kan daar zeker nog verbetering in komen.
   - De titels van nieuwe stukken tekst zijn bijna allemaal in een span gezet. Er word namelijk een animatie gebruikt om het in de laten zweven. Dat zou veranderd kunnen worden naar h2.
   - Zo goed als elke afbeelding heeft een alt tekst.
-
-
-
-
 </details>
 
 
@@ -165,6 +161,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - De errormeldingen van de dopper website waren echt superveel. Die heb ik nu helemaal kunnen wegwerken. Er zijn ook geen info meldingen meer. 
+  - Het navigeren door de site ging al redelijk goed dus daar ik niks aan veranderd. 
+  - De structuur van de h1 h2 elementen was erg chaotisch. In mijn versie heb ik ervoor gezorgd dat elke pagina een h1 heeft en voor de rest in de hierarchie daarvan duidelijk is. 
+  - De images hadden allemaal wel een alt tekst alleen een hele uitegebreide met veelste veel informatie. dat heb ik ingekort en  duidelijkere teksten neer gezet. 
+  - Als extra punten heb ik een audio toegevoegd en een button met een exta optie. 
+  - Wat mij op viel was dat er helemaal tot vrij weinig van de dark mode te vinden was. Zo goed als niks veranderde van kleur dus dat heb ik ook toegevoegd. 
+  Voor de rest van het kleurcontrast redelijk goed en heb ik kleine stukjes van de lay-out en het design aangepast. 
 
 </details>
 
@@ -231,7 +234,7 @@ Ik heb het gehad over het hamburgermenu, mijn carrousel en het golfje van mijn f
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
-  Ik vond best wel veel dingen tijdens dit vak lastig. Zo is het me nogsteeds neit gelukt om mijn hamburger menu goed te laten werken. Ik heb er uren aan besteed maar het lukt me neit helemaal. ook vind ik het namaken van de footer erg lastig. Ik krijg de tekst steeds niet op de goede plekken en de "golf" animatie bovenaan de footer is ook nog een dingetje. In ieder geval nog genoeg punten om aan te werken.
+  Ik vond best wel veel dingen tijdens dit vak lastig. Zo is het me nogsteeds neit gelukt om mijn hamburger menu goed te laten werken, maar als het goed is doet die het nu eindelijk wel. na heel veel proberen, onderzoeken en vragen aan klasgenootjes is het me uiteindelijk gelukt. Ik heb er uren aan besteed maar het lukt me neit helemaal. ook vind ik het namaken van de footer erg lastig. Ik krijg de tekst steeds niet op de goede plekken en de "golf" animatie bovenaan de footer is ook nog een dingetje. In ieder geval nog genoeg punten om aan te werken.
 
   <img src="readme-images/schermafbeelding-footer.png" width="375px" alt="schermafbeelding footer">
   <img src="readme-images/schermafbeelding-hamburgermenu.png" width="375px" alt="schermafbeelding menu">

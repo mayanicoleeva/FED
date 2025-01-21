@@ -18,28 +18,46 @@
 			<img src="images/dopper-logo.svg" alt="go home">
 		</a>
 		
-		<button aria-expanded="false"]><img src="images/dopper-open.svg" alt="hambugermenu openmaken">
+		<button aria-expanded="false"><img src="images/dopper-open.svg" alt="hambugermenu openmaken">
 			<span></span>
 			<span></span>
 			<span></span>
 		</button>
 		<nav>
-			<ul>
+			<ul class="openNav">
 				<li>
 					<details>
 						<summary>Fles</summary>
-						<a href="productScherm.html"> Koop een fles</a> 
+						<ul>
+						  <li>
+							<img src="images/dopperFlesMenu.webp" alt="lichtblauwe dopper"><p>Koop een fles</p>
+						</li>
+					  </ul>
+					</details>   
+				</li>
+				<li>
+					<details>
+						<summary>Kraan</summary> 
 					</details>
 				</li>
-				<li>Kraan</li>
 				<li>
 					<details>
 						<summary>Missie</summary>
-						Ons verhaal: waarom we bestaan
+						<p>Ons verhaal: waarom we bestaan</p>
+						<p>Duurzaamheid: over de keuzes die we maken</p>
+						<p>Impact: onze resultaten en jaarverslagen</p>
+						<p>Nepal: Hoe we toegang geven tot schoon water</p>
+						<p>Blog: tips om duurzamer te leven</p>
 					</details>
 				</li>
-				<li>Maak Impact</li>
+				<li>
+					<details>
+						<summary>Maak Impact</summary>
+					</details>
+				</li>
 			</ul>
+				<a href="#" class="buttonInNav">Vind een waterttappunt</a>
+				<a href="#" class="buttonInNav">Retailers</a>
 		</nav>
 	</header>
 	
@@ -139,6 +157,15 @@
 		</section>
 	</main>
 	<footer>
+		<div>
+            <ul class="socials">
+                <li><img src="images/instagramLogo.png" alt="Instagram logo"></li>
+                <li><img src="images/facebookLogo.png" alt="Facebook logo"></li>
+                <li><img src="images/linkedInLogo.png" alt="LinkedIn logo"></li>
+                <li><img src="images/twitterLogo.png" alt="Twitter logo"></li>
+                <li><img src="images/tiktokLogo.png" alt="Tiktok logo"></li>
+            </ul>
+		</div>
 		<section>
 			<h3>Schrijf je in voor onze maandelijkse nieuwsbrief en blijf op de hoogte.</h3>
 			<label>
@@ -147,9 +174,12 @@
 			<label>
 				<input type="email" id="email" name="email" placeholder="Je emailadres">
 			</label>
-			<button type="submit"></button>
+			<button id="buttonSubmit" type="submit"></button>
 		</section>
 
+		<div>
+            <h2>Just refill</h2>
+        </div>
 		<section>
 			<ul>
 				<li><h3>Klantenservice</h3></li>
@@ -187,6 +217,21 @@
 				<li><a href="#">Bestel de Dopper Water Tap</a></li>
 				<li><a href="#">Verkoop Dopper flessen</a></li>
 			</ul>
+		</section>
+		<div>
+			<ul class="businessIcons">
+				<li><img src="images/bcorporationLogo.png" alt="Bcorporation logo"></li>
+				<li><img src="images/c2ccertifiedLogo.png" alt="C2C certified logo"></li>
+				<li><img src="images/carbonneutralLogo.png" alt="Carbon Neutral logo"></li>
+				<li><img src="images/onepercentLogo.png" alt="One percent for the planet logo"></li>
+			</ul>
+		</div>
+		<section class="footerBeneden">
+			<h2 class="verberg">hi</h2>
+        <a href="#">Algemene voorwaarden</a>
+		<a href="#">Privacy Policy</a>
+		<a href="#">Cookies</a>
+		<a href="#">Copyright Dopper 2025</a>
 		</section>
 	</footer>
 </body>

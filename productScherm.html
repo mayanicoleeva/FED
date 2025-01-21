@@ -11,53 +11,97 @@
 </head>
 <body>
     <header>
-            <a href="index.html">
-                <img src="images/dopper-logo-blauw.svg" alt="go home">
-            </a>
-            <button aria-expanded="false"><img src="images/dopper-open.svg" alt="hambugermenu openmaken">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        <nav>
-			<ul>
+		<a href="#">
+			<img src="images/dopper-logo.svg" alt="go home">
+		</a>
+		
+		<button aria-expanded="false"><img src="images/dopper-open.svg" alt="hambugermenu openmaken">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<nav>
+			<ul class="openNav">
 				<li>
 					<details>
 						<summary>Fles</summary>
-						<a href="productScherm.html"> Koop een fles</a> 
+						<img src="images/dopperFlesMenu.webp" alt="Lichtblauwe dopper"><p>Koop een fles</p> 
 					</details>
 				</li>
-				<li>Kraan</li>
+				<li>
+					<details>
+						<summary>Kraan</summary> 
+					</details>
+				</li>
 				<li>
 					<details>
 						<summary>Missie</summary>
-						Ons verhaal: waarom we bestaan
+						<a href="index.html">Ons verhaal: waarom we bestaan</a>
+						<p>Duurzaamheid: over de keuzes die we maken</p>
+						<p>Impact: onze resultaten en jaarverslagen</p>
+						<p>Nepal: Hoe we toegang geven tot schoon water</p>
+						<p>Blog: tips om duurzamer te leven</p>
 					</details>
 				</li>
-				<li>Maak Impact</li>
+				<li>
+					<details>
+						<summary>Maak Impact</summary>
+					</details>
+				</li>
 			</ul>
-        </nav>
-    </header>
+				<a href="#" class="buttonInNav">Vind een waterttappunt</a>
+				<a href="#" class="buttonInNav">Retailers</a>
+		</nav>
+	</header>
 
     <main class="product">
         <nav id="nav2">
             <ul>
                 <li><a href="#">Alle producten</a></li>
-                <li><a href="#"></a>Flessen</a></li>
-                <li><a href="#"></a>Accessoires</a></li>
-                <li><a href="#"></a>Losse onderdelen</a></li>
-                <li><a href="#"></a>Royal Delft x Dopper</a></li>
-                <li><a href="#"></a>E-Gift Card</a></li>
+                <li><a href="#">Flessen</a></li>
+                <li><a href="#">Accessoires</a></li>
+                <li><a href="#">Losse onderdelen</a></li>
+                <li><a href="#">Royal Delft x Dopper</a></li>
+                <li><a href="#">E-Gift Card</a></li>
             </ul>
         </nav>
         <div id="productinfo">
+            <p>Dopper Insulated (580ml) x Royal Delft - the Tide</p>
             <h1>Dopper Insulated (580ml) x Royal Delft - the Tide</h1>
+            <p>€49,95</p>
+            <button id="kleurDopper">See all colors</button>
+            <button id="buttonFeestje">feestje</button>
+            <p><a href="#">Order 36+ bottles with logo?</a></p>
         </div>
         <div>
-            <img src="images/wave_small.svg" alt="kleine golf voor overloop kleur">
+            <img id="golfKlein" src="images/wave_small.svg" alt="kleine golf voor overloop kleur">
         </div>
         <section>
-                <img src="images/product-dopper.webp" alt="Foto van dopperfles in samenwerking met Delfs Blauw">
+                <div id="toonGif" class="verborgen">
+                    <img src="images/cuteconfetti.gif" alt="confetti filmpje">
+                </div>
+                <div id="productAndSwipen" class="caroCarrousel" tabIndex="-1">
+                    <h2 class="hidden">Ontdek onze oplossingen</h2>
+                        <ul>
+                            <li id="element5"><img id="bubbelDopper" src="images/product-dopper.webp" alt="Foto van dopperfles in samenwerking met Delfs Blauw">
+                            </li>
+                            <li id="element6"><img src="images/verpakkingDopper.webp" alt="Verpakking van Dopper fles Delfs Blauw">
+                            </li>
+                            <li id="element7"><img src="images/productDopper2.webp" alt="Foto van dopperfles in samenwerking met Delfs Blauw tweede versie">
+                            </li>
+                            <li id="element8"><img src="images/dopperKaart.webp" alt="Cadeau kaart van dopper">
+                            </li>
+                        </ul>
+                        <nav>
+                        <ul>
+                            <li><a href="#element5" aria-label="go to element5"></a></li>
+                            <li><a href="#element6" aria-label="go to element6"></a></li>
+                            <li><a href="#element7" aria-label="go to element7"></a></li>
+                            <li><a href="#element8" aria-label="go to element8"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- code hierboven van deze link https://codepen.io/shooft/pen/ZEpXmrg?editors=0100 -->
 
             <img src="images/zon-sneeuw-icon.png" alt="afbeelding van deel zon deel sneeuwvlok">
             <p>Deze thermosfles houdt je water 9 uur warm of 24 uur koud.
@@ -157,7 +201,7 @@
         </p>
     </section>
     <div id="bannerProduct">
-        <h2>End Packaged water Just refill</h2>
+        <h2><strong>End</strong> Packaged water <strong>Just</strong> refill</h2>
     </div>    
 
     <section>
@@ -165,9 +209,17 @@
         <p>Minimize your impact</p>
     </section>
     </main>
-    
     <footer>
-        <section>
+		<div>
+            <ul class="socials">
+                <li><img src="images/instagramLogo.png" alt="Instagram logo"></li>
+                <li><img src="images/facebookLogo.png" alt="Facebook logo"></li>
+                <li><img src="images/linkedInLogo.png" alt="LinkedIn logo"></li>
+                <li><img src="images/twitterLogo.png" alt="Twitter logo"></li>
+                <li><img src="images/tiktokLogo.png" alt="Tiktok logo"></li>
+            </ul>
+		</div>
+		<section>
 			<h3>Schrijf je in voor onze maandelijkse nieuwsbrief en blijf op de hoogte.</h3>
 			<label>
 				<input type="text" id="name" name="name" placeholder="Je naam">
@@ -175,10 +227,10 @@
 			<label>
 				<input type="email" id="email" name="email" placeholder="Je emailadres">
 			</label>
-			<button type="submit"></button>
+			<button id="buttonSubmit" type="submit"></button>
 		</section>
 
-        <div>
+		<div>
             <h2>Just refill</h2>
         </div>
 		<section>
@@ -219,7 +271,22 @@
 				<li><a href="#">Verkoop Dopper flessen</a></li>
 			</ul>
 		</section>
-    </footer>
-    
+		<div>
+			<ul class="businessIcons">
+				<li><img src="images/bcorporationLogo.png" alt="Bcorporation logo"></li>
+				<li><img src="images/c2ccertifiedLogo.png" alt="C2C certified logo"></li>
+				<li><img src="images/carbonneutralLogo.png" alt="Carbon Neutral logo"></li>
+				<li><img src="images/onepercentLogo.png" alt="One percent for the planet logo"></li>
+			</ul>
+		</div>
+		<section class="footerBeneden">
+            <h2 class="verberg">hi</h2>
+        <a href="#">Algemene voorwaarden</a>
+		<a href="#">Privacy Policy</a>
+		<a href="#">Cookies</a>
+		<a href="#">Copyright Dopper 2025</a>
+        </section>
+	</footer>
 </body>
+	
 </html>

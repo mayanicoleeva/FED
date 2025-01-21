@@ -53,10 +53,6 @@ body {
 /* deel van code van https://codepen.io/shooft/pen/ZEpXmrg?editors=0100 voor carrousel index
 en voor verschillende afbeeldingen van productscherm */
 
-footer {
-	background-color: #f6ecc8;
-}
-
 header {
 	display: flex;
 	position: sticky;
@@ -64,6 +60,10 @@ header {
     justify-content: flex-end;
 	padding: 2em 1.25em;
 
+}
+
+footer {
+	background-color: #f6ecc8;
 }
 
 header button {
@@ -79,6 +79,7 @@ header a:not(.toonMenu a) {
 	width: 40%;
 }
 
+
 header a img {
 	width: 100%;
 }
@@ -86,6 +87,11 @@ header a img {
 h1, h2 {
 	font-family: 'Dopper Regular';
 	font-size: 36px;
+	margin-left: 0.5em;
+}
+
+h2 strong {
+	color: #cce2ff;
 }
 
 h3 {
@@ -93,6 +99,7 @@ h3 {
 	font-size: 28px;
 	margin-top: 1em;
 }
+
 footer h3 {
 	font-family: 'Gilroy Bold';
 	font-size: 18px;
@@ -244,6 +251,7 @@ header > button {
 	z-index: 9;
 }
 
+
 .removeHeader {
 	transform: translate(0%, -100%);
 
@@ -269,6 +277,13 @@ li::marker {
 	transition: opacity 0.6s ease, transform 0.6s ease;
 }
   
+.verberg {
+	overflow: hidden;
+	display: none;
+	width: 1%;
+	height: 1%;
+}
+
 .visible {
 	opacity: 1;
 	transform: translateY(0);
@@ -298,10 +313,6 @@ p.hidden {
 	color: #f6ecc8;
 	padding: 0;
 	margin-top: -5px;
-}
-
-.content h1 {
-	padding: 1.5em;
 }
 
 .content p {
@@ -342,6 +353,7 @@ p.hidden {
 	color: #0067E5;
 
 }
+
 #nav2 ul {
 	display: flex;
 	list-style-type: none;
@@ -350,24 +362,109 @@ p.hidden {
 
 #productinfo {
 	background-color: #cce2ff;
-}
-/* 
-
-.footer {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	padding-left: 0.5em;
 }
 
-#footerheel {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-} */
+#productinfo p {
+	font-size: 12px;
+	margin: 0;
+	padding-top: 1em;
+}
+
+#productinfo h1 {
+	font-size: 28px;
+	margin: 0;
+	padding-top: 0.5em;
+	padding-right: 0.5em;
+	padding-bottom: 1em;
+}
+
+#productinfo p a {
+	color: #000000;
+	font-size: 16px;
+}
 
 #bannerProduct {
 	background-color: #0067E5;
+	color: #f6ecc8;
+	padding: 3em 0 6em;
 }
+
+#bannerProduct h2 {
+	font-family: Gilroy Bold;
+	text-align: center;
+	font-size: 36px;
+	margin: 0;
+}
+
+#golfKlein {
+	background-color: #cce2ff;
+	border-radius: 0;
+}
+
+#kleurDopper {
+	background-color: #f9f3df;
+	border: none;
+	border-radius: 1em;
+	padding: 0.5em 1em 0.5em 1em;
+	margin: 0.5em;
+	font-size: 1em;
+}
+
+.openNav {
+	margin-top: 3em;
+	margin-left: 0.5em;
+}
+
+.openNav img {
+	display: flex;
+}
+
+.buttonInNav {
+	font-size: 20px;
+	background-color: transparent;
+	color: #F6ECC8;
+	border: 0.2em solid #F6ECC8;
+	padding: 1em 1em;
+	border-radius: 1.25em;
+	display: flex;
+	width: fit-content;
+	margin: 1em 0 0 0.5em;
+	text-decoration: none;
+}
+
+details li {
+	display: flex;
+}
+
+summary {
+    display: flex;
+    padding: 0.2em 0;
+    list-style: none;
+	font-family: Gilroy Bold;
+	font-size: 34px;
+}
+
+summary::after {
+    content: url(../images/arrow-down-menu.svg);
+    width: 1em;
+    height: 1em;
+    align-self: center;
+    margin-right: 15px;
+}
+
+/* summary {
+	list-style-image: url(../images/arrowMenu.png);
+}
+
+summary::-webkit-details-marker {
+	background: url(../images/arrowMenu.png);
+	color: transparent;
+} */
+
+/* summary::marker {
+	color: hotpink;
+} */
 	/* ul {
 		font-family: 'Gilroy Medium';
 		list-style-image: url('../images/drop.svg');
@@ -410,8 +507,6 @@ main.product section:nth-of-type(3) {
 
 }
 
-
-
 .caroCarrousel > ul li h3 {
 	position: absolute;
 	top: 0;
@@ -438,16 +533,6 @@ main.product section:nth-of-type(3) {
 .caroCarrousel > ul li:first-of-type, .caroCarrousel > ul li:first-of-type a {
 	color: black;
 }
-
-
-/* dark mode */
-@media (prefers-color-scheme: dark) {
-  .caroCarrousel {
-    --caroCarrouselMainColor:#ccc;
-    --caroCarrouselAccentColor:#4449;
-  }
-}
-
 
 /************************************/
 /* de carrousel elementen container */
@@ -561,7 +646,149 @@ footer section:nth-of-type(2){
 	width: 100%;
 }
 
+.socials {
+	display: flex;
+	flex-direction: row;
+	margin-left: 2em;
+	padding-top: 1em;
+	gap: 1em;
+	width: 80%;
+	justify-content: space-between;
+}
+
+.businessIcons {
+	display: flex;
+	gap: 1em;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+input {
+	width: 100%;
+	background: #FCFAF2;
+	border: none;
+	border-radius: 1em;
+	padding: 1em 2em;
+	margin-top: 1em;
+	font-size: 18px;
+	font-family: 'Gilroy Medium';
+}
+
+#buttonSubmit {
+	padding: 2em;
+	position: absolute;
+	right: 1.5em;
+	top: 389em;
+	border-radius: 4em;
+	border: none;
+	background: #FCFAF2;
+}
+
+footer h2 {
+	font-size: 29px;
+	margin-top: 2em;
+}
+
 footer li {
 	list-style: none;
 }
 
+.footerBackground {
+	background-color: #f6ecc8; 
+}
+
+.footerBeneden {
+	background-color: #FCFAF2;
+}
+/* css voor de button en GIF feestje */
+#toonGif {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none; /* Maakt het niet klikbaar */
+	z-index: 1000; /* Zorgt dat het boven alles komt */
+}
+
+#toonGif img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+   
+  /* Verborgen staat */
+.verborgen {
+	display: none;
+}
+   
+  /* Styling voor de knop */
+#buttonFeestje {
+	z-index: 1001;
+	padding: 0.5em 1em;
+	background: darkblue;
+	color: white;
+	border: none;
+	border-radius: 1em;
+	cursor: pointer;
+	font-size: 1em;
+}
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #000000;
+		color: #f6ecc8;
+	}
+
+	footer h3, h2 {
+		color: #000000;
+	}
+
+	.footerBeneden {
+		background-color: #0067E5;
+	}
+
+	.footerBeneden a {
+		color: #f6ecc8;
+	}
+
+	.hidden {
+		color: #F6ECC8;
+	}
+	
+	.blauwbutton {
+		background-color: darkblue;
+	}
+
+	.zwartwitbutton {
+		background-color: #baccea;
+	}
+
+	.caroCarrousel {
+	  --caroCarrouselMainColor:#0067E5;
+	  --caroCarrouselAccentColor: darkblue;
+	}
+
+	h1 {
+		color: black;
+	}
+
+	#productInfo p {
+		color: #000000;
+	}
+
+	main.product section:nth-of-type(1) {
+		color: black;
+	}
+
+	main.product section:nth-of-type(2) {
+		background-color: #000000;
+	}
+
+	main.product section:nth-of-type(3) {
+		background-color: #0067E5;
+	}
+
+  }
